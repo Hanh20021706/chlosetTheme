@@ -465,6 +465,14 @@ img {
   }
 
   /* === end product page === */
+  /* === blog page === */
+  .card-new__img{
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-new__media{
+    height: 100%;
+  }
 }
 @media (min-width: 992px) {
   /* === product page === */
