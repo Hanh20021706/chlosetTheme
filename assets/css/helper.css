@@ -4,6 +4,9 @@
 .m-top-40 {
   margin-top: 40px;
 }
+.d-none{
+  display: none;
+}
 .d-flex {
   display: flex;
 }
@@ -15,6 +18,9 @@
 }
 .justify-center {
   justify-content: center;
+}
+.justify-space-between{
+  justify-content: space-between;
 }
 .flex-column {
   flex-direction: column;
@@ -30,6 +36,12 @@
 }
 
 @media (min-width: 576px) {
+  .md-block{
+    display: block;
+  }
+  .md-none{
+    display: none;
+  }
 }
 @media (min-width: 768px) {
 }
