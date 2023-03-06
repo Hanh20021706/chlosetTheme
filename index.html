@@ -34,10 +34,9 @@
             <button class="btn-toogle__header" onclick="functionToggle()">
               <i class="fa-solid fa-bars icon-toogle__header"></i>
             </button>
-           
           </div>
           <nav id="navMain" class="nav-main w-100 d-none md-block">
-            <ul class="nav-main__list unstyled ">
+            <ul class="nav-main__list unstyled">
               <li class="nav-main__item">
                 <a href="index.html" class="item-main__link">Home</a>
               </li>
@@ -58,23 +57,172 @@
 
     <!-- === main === -->
     <main class="main">
+      <!-- section detail -->
+      <section class="section-product__detail padding-40 padding-90-xl">
+        <div class="container">
+          <div class="product-deatil__item d-flex flex-column lg-grid">
+            <div class="card-media__detail lg-grid">
+              <div class="card-media__sub d-none lg-flex ">
+                <div class="media-list__item">
+                  <img
+                    onclick="currentDiv(1)"
+                    src="./assets/image/products/im g-detail.png"
+                    alt=""
+                    class="media-item__img demo w3-opacity w3-hover-opacity-off"
+                  />
+                </div>
+                <div class="media-list__item">
+                  <img
+                    onclick="currentDiv(2)"
+                    src="https://i.pinimg.com/564x/d4/ea/c0/d4eac0bc41eff44eb2e072311f3237c6.jpg"
+                    alt=""
+                    class="media-item__img demo w3-opacity w3-hover-opacity-off"
+                  />
+                </div>
+                <div class="media-list__item">
+                  <img
+                    onclick="currentDiv(3)"
+                    src="https://i.pinimg.com/564x/27/d7/c2/27d7c2137c7af01db51687af50b24ea9.jpg"
+                    alt=""
+                    class="media-item__img demo w3-opacity w3-hover-opacity-off"
+                  />
+                </div>
+                <div class="media-list__item">
+                  <img
+                    onclick="currentDiv(4)"
+                    src="https://i.pinimg.com/564x/88/5f/e8/885fe8fa0f772636eb2497a755f12b54.jpg"
+                    alt=""
+                    class="media-item__img demo w3-opacity w3-hover-opacity-off"
+                  />
+                </div>
+              </div>
+              <div class="card-media__main">
+                <img
+          
+                  src="./assets/image/products/im g-detail.png"
+                  alt=""
+                  class="media-main__item mySlides"
+                />
+                <img
+               
+                  src="https://i.pinimg.com/564x/d4/ea/c0/d4eac0bc41eff44eb2e072311f3237c6.jpg"
+                  alt=""
+                  class="media-main__item mySlides lg-none d-none"
+                />
+                <img
+               
+                src="https://i.pinimg.com/564x/27/d7/c2/27d7c2137c7af01db51687af50b24ea9.jpg"
+                alt=""
+                class="media-main__item mySlides lg-none d-none"
+              />
+                <img
+               
+                  src="https://i.pinimg.com/564x/88/5f/e8/885fe8fa0f772636eb2497a755f12b54.jpg"
+                  alt=""
+                  class="media-main__item mySlides lg-none d-none"
+                />
+             
+              </div>
+            
+            </div>
+            <div class="card-body__detail d-flex flex-column">
+              <h2 class="card-title__detail heading-30 heading-color-brown">
+                Product Title
+              </h2>
+              <span
+                class="card-price__detail card-product__price heading-color-brown heading-20"
+              >
+                25.00$ <span class="card-price__update">35.00$</span>
+              </span>
+              <ul class="nav-list__star unstyled d-flex align-center">
+                <li class="list-start__item">
+                  <img
+                    src="./assets/image/icon/star.svg"
+                    alt=""
+                    class="start-item__img"
+                  />
+                </li>
+                <li class="list-start__item">
+                  <img
+                    src="./assets/image/icon/star.svg"
+                    alt=""
+                    class="start-item__img"
+                  />
+                </li>
+                <li class="list-start__item">
+                  <img
+                    src="./assets/image/icon/star.svg"
+                    alt=""
+                    class="start-item__img"
+                  />
+                </li>
+                <li class="list-start__item">
+                  <img
+                    src="./assets/image/icon/star.svg"
+                    alt=""
+                    class="start-item__img"
+                  />
+                </li>
+                <span class="item-review__detail heading-color-brown"
+                  >( 21 review )</span
+                >
+              </ul>
+              <p class="card-desc__detail heading-15">
+                Place here a brief description about your product, for example:
+                its usage, benefits. Describe your product’s hedonic value and
+                utilitarian value.
+              </p>
+              <h3 class="card-title_sub">Product Variant :</h3>
+              <div class="select-checkbox__detail">
+                <label for="" class="heading-15 heading-color-brown">
+                  <input
+                    type="radio"
+                    name=""
+                    id=""
+                    class="inp-checkbox__item"
+                  />
+                  50ml
+                </label>
+                <label for="" class="heading-15 heading-color-brown">
+                  <input type="radio" name="" id="" /> 100 ml
+                </label>
+                <label for="" class="heading-15 heading-color-brown">
+                  <input type="radio" name="" id="" /> 200 ml
+                </label>
+              </div>
+              <form action="" class="form-detail d-flex justify-space-between">
+                <div class="number-change__inp d-flex justify-space-between">
+                  <span> - </span>
+
+                  <input type="number" value="1" class="inp-number__item" />
+                  <span> + </span>
+                </div>
+                <button class="button-cart-color btn-add__detail">
+                  ADD TO CART
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- product introduction -->
       <section class="introduction-wrap padding-40 padding-90-xl">
         <div class="container">
-          <h2 class="product-title">Why choose this product</h2>
+          <h2 class="section-heading-sm section-heading-lg heading-color-brown">
+            Why choose this product
+          </h2>
           <div class="row product-intro__list m-top-40 gap-sm">
             <div class="col" style="--w-sm: 12; --w-md: 6; --w-lg: 3">
               <div class="card-item d-flex align-center flex-column">
                 <div class="card-top">
-                  <div class="card-elip__item"></div>
                   <img
-                    src="./assets/image/icon/Vector.svg"
+                    src="./assets/image/icon/icon-product (1).svg"
                     alt=""
                     class="card-media__item"
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Product Feature</h5>
+                  <h3 class="card-title">Product Feature</h3>
                   <p class="card-text">
                     Write here your product’s unique selling points. Amaze your
                     potential customers and make them believe they need your
@@ -86,15 +234,14 @@
             <div class="col" style="--w-sm: 12; --w-md: 6; --w-lg: 3">
               <div class="card-item d-flex align-center flex-column">
                 <div class="card-top">
-                  <div class="card-elip__item"></div>
                   <img
-                    src="./assets/image/icon/Vector.svg"
+                    src="./assets/image/icon/icon-product (1).svg"
                     alt=""
                     class="card-media__item"
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Product Feature</h5>
+                  <h3 class="card-title">Product Feature</h3>
                   <p class="card-text">
                     Write here your product’s unique selling points. Amaze your
                     potential customers and make them believe they need your
@@ -106,15 +253,14 @@
             <div class="col" style="--w-sm: 12; --w-md: 6; --w-lg: 3">
               <div class="card-item d-flex align-center flex-column">
                 <div class="card-top">
-                  <div class="card-elip__item"></div>
                   <img
-                    src="./assets/image/icon/Vector.svg"
+                    src="./assets/image/icon/icon-product (1).svg"
                     alt=""
                     class="card-media__item"
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Product Feature</h5>
+                  <h3 class="card-title">Product Feature</h3>
                   <p class="card-text">
                     Write here your product’s unique selling points. Amaze your
                     potential customers and make them believe they need your
@@ -126,15 +272,14 @@
             <div class="col" style="--w-sm: 12; --w-md: 6; --w-lg: 3">
               <div class="card-item d-flex align-center flex-column">
                 <div class="card-top">
-                  <div class="card-elip__item"></div>
                   <img
-                    src="./assets/image/icon/Vector.svg"
+                    src="./assets/image/icon/icon-product (1).svg"
                     alt=""
                     class="card-media__item"
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Product Feature</h5>
+                  <h3 class="card-title">Product Feature</h3>
                   <p class="card-text">
                     Write here your product’s unique selling points. Amaze your
                     potential customers and make them believe they need your
@@ -150,10 +295,10 @@
 
       <section class="reviews-wrap padding-40 padding-90-xl">
         <div class="container">
-          <h2 class="product-title product-reviews__title">
-            <a class="product-reviews__link" href="./blogPage.html">
-              Testimonial
-            </a>
+          <h2
+            class="section-heading-sm section-heading-lg heading-color-orange"
+          >
+            Testimonial
           </h2>
           <div class="row product-reviews__list m-top-40 gap-sm">
             <div class="col" style="--w-sm: 12; --w-md: 4; --w-lg: 6">
@@ -170,38 +315,38 @@
                     “ I’ve already gotten compliments about my skin glowing
                     after using the anti-aging! ”
                   </p>
-                  <nav class="card-list__star">
-                    <ul class="nav-list__star unstyled d-flex">
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                    </ul>
-                  </nav>
+
+                  <ul class="nav-list__star unstyled d-flex">
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                  </ul>
+
                   <span class="card-reviews__author"> Lyly Collin </span>
                 </div>
               </div>
@@ -220,38 +365,38 @@
                     “ I’ve already gotten compliments about my skin glowing
                     after using the anti-aging! ”
                   </p>
-                  <nav class="card-list__star">
-                    <ul class="nav-list__star unstyled d-flex">
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                    </ul>
-                  </nav>
+
+                  <ul class="nav-list__star unstyled d-flex">
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                  </ul>
+
                   <span class="card-reviews__author"> Lyly Collin </span>
                 </div>
               </div>
@@ -270,38 +415,38 @@
                     “ I’ve already gotten compliments about my skin glowing
                     after using the anti-aging! ”
                   </p>
-                  <nav class="card-list__star">
-                    <ul class="nav-list__star unstyled d-flex">
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                    </ul>
-                  </nav>
+
+                  <ul class="nav-list__star unstyled d-flex">
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                  </ul>
+
                   <span class="card-reviews__author"> Lyly Collin </span>
                 </div>
               </div>
@@ -320,38 +465,38 @@
                     “ I’ve already gotten compliments about my skin glowing
                     after using the anti-aging! ”
                   </p>
-                  <nav class="card-list__star">
-                    <ul class="nav-list__star unstyled d-flex">
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                      <li class="list-start__item">
-                        <img
-                          src="./assets/image/icon/star.svg"
-                          alt=""
-                          class="start-item__img"
-                        />
-                      </li>
-                    </ul>
-                  </nav>
+
+                  <ul class="nav-list__star unstyled d-flex">
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                    <li class="list-start__item">
+                      <img
+                        src="./assets/image/icon/star.svg"
+                        alt=""
+                        class="start-item__img"
+                      />
+                    </li>
+                  </ul>
+
                   <span class="card-reviews__author"> Lyly Collin </span>
                 </div>
               </div>
@@ -374,11 +519,11 @@
             </div>
 
             <div class="card-body__colection">
-              <h3 class="card-colection__title">BEECHTOWN COLLECTIVE</h3>
-              <p class="card-text__colection">
+              <h3 class="headingh3-card__colection">BEECHTOWN COLLECTIVE</h3>
+              <h2 class="heading2-card__colection heading-color-brown">
                 Buy Now - Get 25% discount for next purchase
-              </p>
-              <button class="card-button__colection">BUY NOW</button>
+              </h2>
+              <button class="card-button__colection button-cart-color">BUY NOW</button>
             </div>
           </div>
         </div>
@@ -388,7 +533,11 @@
       <!-- product related -->
       <section class="related-products__wrap padding-40 padding-90-xl">
         <div class="container">
-          <h2 class="product-title related-product__title">Related Products</h2>
+          <h2
+            class="section-heading-sm section-heading-lg heading-color-orange"
+          >
+            Related Products
+          </h2>
           <div class="row related-product__list m-top-40 gap-sm gap-lg-5">
             <div class="col" style="--w-md: 6; --w-lg: 3">
               <div
@@ -403,86 +552,23 @@
                 </div>
                 <div class="card-body__product text-center">
                   <h3 class="card-product__title">
-                    <a href="./colectionPage.html" class="card-title__link">
+                    <a
+                      href="./colectionPage.html"
+                      class="card-title__link heading-24"
+                    >
                       Product Name</a
                     >
                   </h3>
-                  <p class="card-product__price">
+                  <span
+                    class="card-product__price heading-color-brown heading-20"
+                  >
                     50.00$ <span class="card-price__update">50.00$</span>
-                  </p>
-                  <button class="card-product__card w-100">ADD TO CART</button>
-                </div>
-              </div>
-            </div>
-            <div class="col" style="--w-md: 6; --w-lg: 3">
-              <div
-                class="card-related__product d-flex flex-column align-center"
-              >
-                <div class="card-media__product">
-                  <img
-                    src="./assets/image/products/image 2.png"
-                    alt=""
-                    class="card-related__img"
-                  />
-                </div>
-                <div class="card-body__product text-center">
-                  <h3 class="card-product__title">
-                    <a href="./colectionPage.html" class="card-title__link">
-                      Product Name</a
-                    >
-                  </h3>
-                  <p class="card-product__price">
-                    50.00$ <span class="card-price__update">50.00$</span>
-                  </p>
-                  <button class="card-product__card">ADD TO CART</button>
-                </div>
-              </div>
-            </div>
-            <div class="col" style="--w-md: 6; --w-lg: 3">
-              <div
-                class="card-related__product d-flex flex-column align-center"
-              >
-                <div class="card-media__product">
-                  <img
-                    src="./assets/image/products/image 2.png"
-                    alt=""
-                    class="card-related__img"
-                  />
-                </div>
-                <div class="card-body__product text-center">
-                  <h3 class="card-product__title">
-                    <a href="./colectionPage.html" class="card-title__link">
-                      Product Name</a
-                    >
-                  </h3>
-                  <p class="card-product__price">
-                    50.00$ <span class="card-price__update">50.00$</span>
-                  </p>
-                  <button class="card-product__card">ADD TO CART</button>
-                </div>
-              </div>
-            </div>
-            <div class="col" style="--w-md: 6; --w-lg: 3">
-              <div
-                class="card-related__product d-flex flex-column align-center"
-              >
-                <div class="card-media__product">
-                  <img
-                    src="./assets/image/products/image 2.png"
-                    alt=""
-                    class="card-related__img"
-                  />
-                </div>
-                <div class="card-body__product text-center">
-                  <h3 class="card-product__title">
-                    <a href="./colectionPage.html" class="card-title__link">
-                      Product Name</a
-                    >
-                  </h3>
-                  <p class="card-product__price">
-                    50.00$ <span class="card-price__update">50.00$</span>
-                  </p>
-                  <button class="card-product__card">ADD TO CART</button>
+                  </span>
+                  <button
+                    class="btn-add__cart heading-color-brown button w-100"
+                  >
+                    ADD TO CART
+                  </button>
                 </div>
               </div>
             </div>
@@ -495,16 +581,5 @@
     <!-- === footer -->
     <footer class="footer"></footer>
     <!-- === end ===  -->
-
-    <script>
-      function functionToggle() {
-        var x = document.getElementById("navMain");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
   </body>
 </html>

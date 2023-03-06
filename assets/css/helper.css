@@ -37,7 +37,6 @@
 .unstyled {
   list-style-type: none;
 }
-
 @media (min-width: 576px) {
   .md-block{
     display: block;
@@ -47,6 +46,21 @@
   }
 }
 @media (min-width: 768px) {
+  .lg-none{
+    display: none;
+  }
+  .lg-block{
+    display: block;
+  }
+  .section-heading-lg {
+    font-size: 60px;
+  }
+  .lg-flex{
+    display: flex;
+  }
+  .lg-grid{
+    display: grid;
+  }
 }
 @media (min-width: 992px) {
   .flex-row-lg {
