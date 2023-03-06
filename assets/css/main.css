@@ -47,7 +47,6 @@ img {
 }
 
 /* heading */
-
 .heading-family {
   font-family: var(--font-family-title);
 }
@@ -117,7 +116,9 @@ img {
   line-height: 1.2;
   border: none;
 }
+
 /* === product page === */
+
 /* header */
 .header {
   background-color: var(--background-white);
@@ -169,7 +170,7 @@ img {
 }
 /* main */
 /* introduction products */
-.section-product__detail{
+.section-product__detail {
   background-color: var(--background-light-orange);
 }
 .product-deatil__item {
@@ -196,18 +197,25 @@ img {
   gap: 10px;
   margin-top: 50px;
 }
+.btn__dec,
+.btn__inc {
+  border: none;
+  background: none;
+  font-size: 24px;
+}
 .number-change__inp {
   border: 1px solid #ececec;
   background-color: var(--background-white);
   display: flex;
   align-items: center;
   padding: 16px 18px;
-  vertical-align: top
+  vertical-align: top;
 }
 .inp-number__item {
   border: none;
   outline: none;
   max-width: 120px;
+  padding-left: 50px;
 }
 .btn-decrement,
 .btn-increment {
@@ -215,7 +223,7 @@ img {
   background-color: var(--background-white);
 }
 .btn-add__detail {
-padding: 19px 54px;
+  padding: 19px 54px;
   flex: 1;
 }
 
@@ -579,36 +587,34 @@ padding: 19px 54px;
 }
 @media (min-width: 768px) {
   /* === product page === */
-  .product-deatil__item{
+  .product-deatil__item {
     grid-template-columns: 1fr 1fr;
     gap: 132px;
   }
   .product-list__wrap {
     padding-top: 90px;
   }
-  .card-title__detail{
+  .card-title__detail {
     font-size: 50px;
   }
-  .card-media__detail{
-
-    gap:10px;
-    grid-template-columns: 20% 80%;
+  .card-media__detail {
+    gap: 10px;
+    grid-template-columns: 100px 1fr;
   }
-  .media-item__img{
+  .media-item__img {
     height: 139px;
   }
-  .media-main__item{
+  .media-main__item {
     object-fit: cover;
     max-width: 454px;
     height: 586px;
   }
-  .card-media__sub{
-    
+  .card-media__sub {
     flex-direction: column;
-    
+
     gap: 10px;
   }
-  .card-body__detail{
+  .card-body__detail {
     justify-content: center;
   }
   /* section colection */

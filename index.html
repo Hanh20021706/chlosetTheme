@@ -62,7 +62,7 @@
         <div class="container">
           <div class="product-deatil__item d-flex flex-column lg-grid">
             <div class="card-media__detail lg-grid">
-              <div class="card-media__sub d-none lg-flex ">
+              <div class="card-media__sub d-none lg-flex">
                 <div class="media-list__item">
                   <img
                     onclick="currentDiv(1)"
@@ -98,32 +98,26 @@
               </div>
               <div class="card-media__main">
                 <img
-          
                   src="./assets/image/products/im g-detail.png"
                   alt=""
                   class="media-main__item mySlides"
                 />
                 <img
-               
                   src="https://i.pinimg.com/564x/d4/ea/c0/d4eac0bc41eff44eb2e072311f3237c6.jpg"
                   alt=""
                   class="media-main__item mySlides lg-none d-none"
                 />
                 <img
-               
-                src="https://i.pinimg.com/564x/27/d7/c2/27d7c2137c7af01db51687af50b24ea9.jpg"
-                alt=""
-                class="media-main__item mySlides lg-none d-none"
-              />
+                  src="https://i.pinimg.com/564x/27/d7/c2/27d7c2137c7af01db51687af50b24ea9.jpg"
+                  alt=""
+                  class="media-main__item mySlides lg-none d-none"
+                />
                 <img
-               
                   src="https://i.pinimg.com/564x/88/5f/e8/885fe8fa0f772636eb2497a755f12b54.jpg"
                   alt=""
                   class="media-main__item mySlides lg-none d-none"
                 />
-             
               </div>
-            
             </div>
             <div class="card-body__detail d-flex flex-column">
               <h2 class="card-title__detail heading-30 heading-color-brown">
@@ -192,11 +186,24 @@
               </div>
               <form action="" class="form-detail d-flex justify-space-between">
                 <div class="number-change__inp d-flex justify-space-between">
-                  <span> - </span>
+                  <button id="dec" class="btn__dec" onclick="stepper(this)">
+                    -
+                  </button>
 
-                  <input type="number" value="1" class="inp-number__item" />
-                  <span> + </span>
+                  <input
+                    id="myInput"
+                    min="1"
+                    step="1"
+                    max="20"
+                    type="number"
+                    value="1"
+                    class="inp-number__item" readonly
+                  />
+                  <button id="inc" class="btn__inc" onclick="stepper(this)">
+                    +
+                  </button>
                 </div>
+
                 <button class="button-cart-color btn-add__detail">
                   ADD TO CART
                 </button>
@@ -523,7 +530,9 @@
               <h2 class="heading2-card__colection heading-color-brown">
                 Buy Now - Get 25% discount for next purchase
               </h2>
-              <button class="card-button__colection button-cart-color">BUY NOW</button>
+              <button class="card-button__colection button-cart-color">
+                BUY NOW
+              </button>
             </div>
           </div>
         </div>
@@ -546,6 +555,105 @@
                 <div class="card-media__product">
                   <img
                     src="./assets/image/products/image 2.png"
+                    alt=""
+                    class="card-related__img"
+                  />
+                </div>
+                <div class="card-body__product text-center">
+                  <h3 class="card-product__title">
+                    <a
+                      href="./colectionPage.html"
+                      class="card-title__link heading-24"
+                    >
+                      Product Name</a
+                    >
+                  </h3>
+                  <span
+                    class="card-product__price heading-color-brown heading-20"
+                  >
+                    50.00$ <span class="card-price__update">50.00$</span>
+                  </span>
+                  <button
+                    class="btn-add__cart heading-color-brown button w-100"
+                  >
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="--w-md: 6; --w-lg: 3">
+              <div
+                class="card-related__product d-flex flex-column align-center"
+              >
+                <div class="card-media__product">
+                  <img
+                    src="./assets/image/products/image 2 (1).png"
+                    alt=""
+                    class="card-related__img"
+                  />
+                </div>
+                <div class="card-body__product text-center">
+                  <h3 class="card-product__title">
+                    <a
+                      href="./colectionPage.html"
+                      class="card-title__link heading-24"
+                    >
+                      Product Name</a
+                    >
+                  </h3>
+                  <span
+                    class="card-product__price heading-color-brown heading-20"
+                  >
+                    50.00$ <span class="card-price__update">50.00$</span>
+                  </span>
+                  <button
+                    class="btn-add__cart heading-color-brown button w-100"
+                  >
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="--w-md: 6; --w-lg: 3">
+              <div
+                class="card-related__product d-flex flex-column align-center"
+              >
+                <div class="card-media__product">
+                  <img
+                    src="./assets/image/products/image 2 (3).png"
+                    alt=""
+                    class="card-related__img"
+                  />
+                </div>
+                <div class="card-body__product text-center">
+                  <h3 class="card-product__title">
+                    <a
+                      href="./colectionPage.html"
+                      class="card-title__link heading-24"
+                    >
+                      Product Name</a
+                    >
+                  </h3>
+                  <span
+                    class="card-product__price heading-color-brown heading-20"
+                  >
+                    50.00$ <span class="card-price__update">50.00$</span>
+                  </span>
+                  <button
+                    class="btn-add__cart heading-color-brown button w-100"
+                  >
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="--w-md: 6; --w-lg: 3">
+              <div
+                class="card-related__product d-flex flex-column align-center"
+              >
+                <div class="card-media__product">
+                  <img
+                    src="./assets/image/products/image 2 (2).png"
                     alt=""
                     class="card-related__img"
                   />
