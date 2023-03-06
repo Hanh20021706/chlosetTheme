@@ -10,8 +10,47 @@
     <link rel="stylesheet" href="./assets/css/helper.css" />
   </head>
   <body>
-    <!-- === header ==== -->
-    <header class="header-colection">
+   
+ <!-- === header === -->
+ <header class="header">
+  <div class="container">
+    <div class="header-main d-flex justify-space-between align-center">
+      <div class="logo-header">
+        <img
+          src="https://brademar.com/wp-content/uploads/2022/09/Orion-Logo-PNG-1.png"
+          alt=""
+          class="logo-header__img"
+        />
+      </div>
+      <div class="toogle-header md-none">
+        <button class="btn-toogle__header" onclick="functionToggle()">
+          <i class="fa-solid fa-bars icon-toogle__header"></i>
+        </button>
+       
+      </div>
+      <nav id="navMain" class="nav-main w-100 d-none md-block">
+        <ul class="nav-main__list unstyled ">
+          <li class="nav-main__item">
+            <a href="index.html" class="item-main__link">Home</a>
+          </li>
+          <li class="nav-main__item">
+            <a href="colectionPage.html" class="item-main__link"
+              >Products</a
+            >
+          </li>
+          <li class="nav-main__item">
+            <a href="blogPage.html" class="item-main__link">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- === end === -->
+    <!-- === main === -->
+    <main class="main">
+       <!-- === header ==== -->
+    <section class="banner-colection">
       <div class="container">
         <div class="header-wrap text-center">
           <h2 class="header-wrap__title">
@@ -25,10 +64,7 @@
                 </button> -->
         </div>
       </div>
-    </header>
-
-    <!-- === main === -->
-    <main class="main">
+    </section>
       <!-- product list -->
       <section class="product-list__wrap padding-40">
         <div class="container">

@@ -10,50 +10,86 @@
     <link rel="stylesheet" href="./assets/css/helper.css" />
   </head>
   <body>
-    <!-- === header === -->
-    <header class="header-blog">
-      <div class="container">
-        <nav class="header-nav">
-          <ul class="header-nav__list unstyled d-flex justify-center">
-            <li class="nav-item__icon">
-              <img
-                class="item-icon__img"
-                src="./assets/image/icon/snow.svg"
-                alt=""
-              />
+   <!-- === header === -->
+   <header class="header">
+    <div class="container">
+      <div class="header-main d-flex justify-space-between align-center">
+        <div class="logo-header">
+          <img
+            src="https://brademar.com/wp-content/uploads/2022/09/Orion-Logo-PNG-1.png"
+            alt=""
+            class="logo-header__img"
+          />
+        </div>
+        <div class="toogle-header md-none">
+          <button class="btn-toogle__header" onclick="functionToggle()">
+            <i class="fa-solid fa-bars icon-toogle__header"></i>
+          </button>
+         
+        </div>
+        <nav id="navMain" class="nav-main w-100 d-none md-block">
+          <ul class="nav-main__list unstyled ">
+            <li class="nav-main__item">
+              <a href="index.html" class="item-main__link">Home</a>
             </li>
-            <li class="nav-item__icon">
-              <img
-                class="item-icon__img"
-                src="./assets/image/icon/snow.svg"
-                alt=""
-              />
+            <li class="nav-main__item">
+              <a href="colectionPage.html" class="item-main__link"
+                >Products</a
+              >
             </li>
-            <li class="nav-item__icon">
-              <img
-                class="item-icon__img"
-                src="./assets/image/icon/snow.svg"
-                alt=""
-              />
-            </li>
-            <li class="nav-item__icon">
-              <img
-                class="item-icon__img"
-                src="./assets/image/icon/snow.svg"
-                alt=""
-              />
+            <li class="nav-main__item">
+              <a href="blogPage.html" class="item-main__link">Blog</a>
             </li>
           </ul>
         </nav>
-        <h2 class="header-blog__title product-title">
-          Don't Miss Out Blog To Drive
-        </h2>
       </div>
-    </header>
-    <!-- === end === -->
+    </div>
+  </header>
+  <!-- === end === -->
 
     <!-- === main === -->
     <main class="main">
+      <!-- === header === -->
+      <section class="banner-blog">
+        <div class="container">
+          <nav class="banner-nav">
+            <ul class="banner-nav__list unstyled d-flex justify-center">
+              <li class="nav-item__icon">
+                <img
+                  class="item-icon__img"
+                  src="./assets/image/icon/snow.svg"
+                  alt=""
+                />
+              </li>
+              <li class="nav-item__icon">
+                <img
+                  class="item-icon__img"
+                  src="./assets/image/icon/snow.svg"
+                  alt=""
+                />
+              </li>
+              <li class="nav-item__icon">
+                <img
+                  class="item-icon__img"
+                  src="./assets/image/icon/snow.svg"
+                  alt=""
+                />
+              </li>
+              <li class="nav-item__icon">
+                <img
+                  class="item-icon__img"
+                  src="./assets/image/icon/snow.svg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </nav>
+          <h2 class="banner-blog__title product-title">
+            Don't Miss Out Blog To Drive
+          </h2>
+        </div>
+      </section>
+      <!-- === end === -->
       <section class="blog-wrap">
         <div class="container-blog">
           <div class="header-blog__content">
@@ -119,7 +155,7 @@
               </p>
             </div>
             <div class="card-blog__media m-top-40 m-top-60">
-              <figure class="card-blog__img">
+              <figure class="card-blog__img w-100">
                 <img
                   src="./assets/image/colection/image 3.png"
                   alt=""
@@ -232,9 +268,9 @@
               videos are particularly important because readers tend to be
               visual and want to see your product in action.
             </p>
-            <figure class="card-blog__img m-top-60 card-blog__video">
+            <figure class="card-blog__img w-100 m-top-60 card-blog__video">
               <iframe
-                class="blog-item__video"
+                class="blog-item__video w-100"
                 src="https://www.youtube.com/embed/zSW4pv6jc0w"
                 title="Roi Mot Ngay - Dewie ft Phong Wind ( new ver )"
                 frameborder="0"
@@ -319,7 +355,6 @@
                 </div>
               </div>
             </div>
-           
           </div>
         </div>
       </section>

@@ -71,7 +71,7 @@ img {
 }
 .nav-main{
   order: 3;
-  width: 100%;
+ 
 }
 .nav-main__list{
   margin: 0;
@@ -94,6 +94,9 @@ img {
 }
 .nav-main{}
 /* main */
+.main{
+  margin-top: 90px;
+}
 /* introduction products */
 .introduction-wrap {
   background: url(../image/bacgroundImage/Rectangle\ 39.png) top center / cover
@@ -271,7 +274,6 @@ img {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.1;
-  width: 100%;
 }
 
 /* footer */
@@ -279,7 +281,7 @@ img {
 /* === end product page === */
 
 /* === colection page ===*/
-.header-colection {
+.banner-colection {
   background: url(../image/bacgroundImage/header-bg.png) top center / cover
     no-repeat;
 }
@@ -380,7 +382,7 @@ img {
 /* === end === */
 
 /* === Blog page ===  */
-.header-blog {
+.banner-blog {
   background: url(../image/bacgroundImage/Rectangle\ 45.png) top center / cover
     no-repeat;
   padding: 140px 15px;
@@ -393,7 +395,7 @@ img {
 .nav-item__icon {
   padding: 0px 5px;
 }
-.header-blog__title {
+.banner-blog__title {
   font-size: 40px;
   font-weight: 400;
   line-height: 1.5;
@@ -433,7 +435,6 @@ img {
 }
 .card-blog__img {
   margin: 0;
-  width: 100%;
 }
 .img-item__desc {
   text-align: center;
@@ -457,7 +458,6 @@ img {
   margin-top: 40px;
 }
 .blog-item__video {
-  width: 100%;
 }
 
 .footer-blog {
