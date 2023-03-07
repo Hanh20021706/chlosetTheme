@@ -632,6 +632,9 @@ img {
     grid-template-columns: 1fr 1fr;
     gap: 132px;
   }
+  .card-desc__detail{
+    margin-top: 20px;
+  }
   .product-list__wrap {
     padding-top: 90px;
   }
