@@ -8,13 +8,7 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/layout.css" />
     <link rel="stylesheet" href="./assets/css/helper.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <script src="main.js"></script>
   </head>
 
@@ -32,11 +26,13 @@
           </div>
           <div class="toogle-header md-none">
             <button class="btn-toogle__header" onclick="functionToggle()">
-              <i class="fa-solid fa-bars icon-toogle__header"></i>
+              <span class="item-toggle__heade"></span>
+              <span class="item-toggle__heade"></span>
+              <span class="item-toggle__heade"></span>
             </button>
           </div>
           <nav id="navMain" class="nav-main w-100 d-none md-block">
-            <ul class="nav-main__list unstyled">
+            <ul class="nav-main__list md-flex unstyled">
               <li class="nav-main__item">
                 <a href="index.html" class="item-main__link">Home</a>
               </li>
@@ -219,14 +215,14 @@
                     max="20"
                     type="number"
                     value="1"
-                    class="inp-number__item" readonly
+                    class="inp-number__item text-center" readonly
                   />
                   <button id="inc" class="btn__inc" onclick="stepper(this)">
                     +
                   </button>
                 </div>
 
-                <button class="button-cart-color btn-add__detail">
+                <button class=" button btn-add__detail button-cart-color">
                   ADD TO CART
                 </button>
               </form>
@@ -250,7 +246,7 @@
                     class="card-media__item"
                   />
                 </div>
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h3 class="card-title">Product Feature</h3>
                   <p class="card-text">
                     Write here your product’s unique selling points. Amaze your
@@ -269,7 +265,7 @@
                     class="card-media__item"
                   />
                 </div>
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h3 class="card-title">Product Feature</h3>
                   <p class="card-text">
                     Write here your product’s unique selling points. Amaze your
@@ -288,7 +284,7 @@
                     class="card-media__item"
                   />
                 </div>
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h3 class="card-title">Product Feature</h3>
                   <p class="card-text">
                     Write here your product’s unique selling points. Amaze your
@@ -307,7 +303,7 @@
                     class="card-media__item"
                   />
                 </div>
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h3 class="card-title">Product Feature</h3>
                   <p class="card-text">
                     Write here your product’s unique selling points. Amaze your
@@ -552,7 +548,7 @@
               <h2 class="heading2-card__colection heading-color-brown">
                 Buy Now - Get 25% discount for next purchase
               </h2>
-              <button class="card-button__colection button-cart-color">
+              <button class="card-button__colection button-cart-color button">
                 BUY NOW
               </button>
             </div>
@@ -582,7 +578,7 @@
                   />
                 </div>
                 <div class="card-body__product text-center">
-                  <h3 class="card-product__title">
+                  <h3 class="card-product__title heading-family">
                     <a
                       href="./colectionPage.html"
                       class="card-title__link heading-24"
@@ -615,7 +611,7 @@
                   />
                 </div>
                 <div class="card-body__product text-center">
-                  <h3 class="card-product__title">
+                  <h3 class="card-product__title heading-family">
                     <a
                       href="./colectionPage.html"
                       class="card-title__link heading-24"
@@ -648,7 +644,7 @@
                   />
                 </div>
                 <div class="card-body__product text-center">
-                  <h3 class="card-product__title">
+                  <h3 class="card-product__title heading-family">
                     <a
                       href="./colectionPage.html"
                       class="card-title__link heading-24"
