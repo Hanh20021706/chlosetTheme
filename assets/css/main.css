@@ -30,6 +30,7 @@ body {
   --color-pale-brown: #b1a89e;
   --color-light-yellow: #928475;
   --color-border-chex: #f6e1c7;
+  --color-phace : #C9C9C9;
 }
 h1,
 h2,
@@ -212,7 +213,7 @@ img {
     display: block;
     position: absolute;
     left: 0%;
-    top: 48%;
+    top: 51%;
     transform: translate(18%, -50%) scale(0);
     border-radius: 50%;
 }
@@ -407,9 +408,10 @@ img {
   color: var(--color-pale-brown);
 }
 .btn-add__cart {
-  padding: 16px 36px;
+  padding: 16px;
   background-color: var(--background-white);
   margin-top: 20px;
+  letter-spacing: 1.5px;
 }
 
 /* footer */
@@ -599,6 +601,13 @@ img {
   border: 1px solid var(--color-brown);
   outline: none;
 }
+.form-input__text::placeholder{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2.5;
+  color: var(--color-phace);
+ 
+}
 .form-btn__submit {
   border: 1px solid var(--color-brown);
   background: var(--background-white);
@@ -662,6 +671,11 @@ img {
     justify-content: center;
   }
   /* section colection */
+  .header-text__sub{
+    font-size: 24px;
+    line-height: 1.8;
+    font-weight: 400;
+  }
   .headingh3-card__colection{
     font-size: 20px;
   }
