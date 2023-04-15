@@ -607,6 +607,7 @@ img {
   }
   .nav-main__list {
     float: right;
+    display: flex;
   }
   .nav-main__item {
     padding-left: 50px;
